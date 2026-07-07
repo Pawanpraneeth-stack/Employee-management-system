@@ -1,0 +1,75 @@
+.add-employee {
+    background: #ffffff;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.add-employee h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.employee-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 5px rgba(42,82,152,0.3);
+}
+
+.add-btn {
+    grid-column: span 2;
+    padding: 14px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: linear-gradient(135deg, #16315d, #1f437d);
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+
+    .employee-form {
+        grid-template-columns: 1fr;
+    }
+
+    .add-btn {
+        grid-column: span 1;
+    }
+}
